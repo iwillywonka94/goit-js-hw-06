@@ -5,9 +5,9 @@ form.addEventListener("blur", colorChanger)
 
 function colorChanger (event) {
     event.preventDefault();
-    if (form.value.length !== limit) {
-        form.classList.add("invalid")
+    if (form.value.length === limit) {
+        form.classList.add("valid")
     } else {
-        form.classList.replace("invalid", "valid")
+        form.classList.replace("valid", "invalid")
     }
 }
